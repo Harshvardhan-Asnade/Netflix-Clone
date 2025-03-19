@@ -12,14 +12,13 @@ body {
 }
 
 .nav-logo {
-    width: 150px;
+    width: 130px;
 }
-
 .navbuttons {
     display: flex;
-    gap: 35px;
+    gap: 45px;
     margin-left: 40px;
-    flex-grow: 1;
+    margin-right: 400px;
 }
 
 .nav-link {

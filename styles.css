@@ -2,39 +2,36 @@ body {
     background-color: #000000;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 .nav {
+    padding: 8px 20px;  
     display: flex;
     align-items: center;
     padding: 30px 40px;
-    position:sticky;
-    width:auto;
-    top:0;
+    position: sticky;
+    width: auto;
+    top: 0;
 }
 
 .nav-logo {
     width: 130px;
 }
+
 .navbuttons {
     display: flex;
     gap: 45px;
     margin-left: 40px;
-    margin-right: 400px;
+    margin-right: 360px;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-link.active {
-    font-weight: bold;
-    color: #e50914;
 }
 
 .nav-link:hover {
-    color: #e50914;
+    color: #ff0000;
 }
 
 .nav-login {
@@ -44,14 +41,26 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    margin-right: 5px;
 }
 
 .nav-login:hover {
     background-color: #c40812;
 }
 
+.followButton {
+    padding: 8px 20px;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
+.followButton:hover{
+    background-color:#c40812;
+}
 .row-section {
     padding: 4rem 60px;
 }

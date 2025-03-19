@@ -86,10 +86,14 @@ body {
     transition: transform 0.3s;
     flex-shrink: 0;
 }
-.movie-card1 img{
+.movie-card1 img {
+    width: 100%;
     max-width: 500px;
-    object-fit: fill;
+    height: auto;
+    object-fit: contain; /* Keeps full image visible */
+    background-color: black; /* Optional: Adds background for empty space */
 }
+
 .movie-card1 {
     min-width: 500px;
     max-width: 500px;

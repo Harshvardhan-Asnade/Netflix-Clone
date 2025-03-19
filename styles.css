@@ -1,80 +1,93 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 body {
     background-color: #000;
     color: white;
 }
- 
-.header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
 
+ 
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-logo {
     width: 150px;
 }
 
-.nav-items {
+.nav-links {
     display: flex;
-    gap: 20px;
+    gap: 35px;
+    margin-left: 40px;
+    flex-grow: 1;
 }
 
-.nav-item {
-    padding: 7px 17px;
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #e50914;
+}
+
+.nav-link:hover {
+    color: #e50914;
+}
+
+.nav-login {
+    padding: 8px 20px;
     background-color: #e50914;
-    border-radius: 3px;
+    border-radius: 4px;
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-login:hover {
+    background-color: #c40812;
 }
 
  
-.content-nav {
-    padding: 1rem 4rem;
-    background: #141414;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.content-nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.content-nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
 .row-section {
-    padding: 2rem 4rem;
+    padding: 4rem 60px;
 }
 
 .row-title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .row-container {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     overflow-x: auto;
+    padding-bottom: 10px;
 }
 
 .movie-card {
-    min-width: 200px;
-    height: 300px;
+    min-width: 250px;
+    height: 350px;
     background: #2f2f2f;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: transform 0.3s;
+    flex-shrink: 0;
 }
 
 .movie-card:hover {
@@ -82,25 +95,23 @@ body {
     cursor: pointer;
 }
 
- 
 .footer {
-    padding: 2rem 4rem;
+    padding: 3rem 60px;
     border-top: 8px solid #222;
     color: #777;
-    margin-top: 4rem;
 }
 
 .footer-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .footer-link {
     color: #777;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .footer-link:hover {

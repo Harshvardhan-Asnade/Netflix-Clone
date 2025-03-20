@@ -74,27 +74,25 @@ body {
 
 .row-container {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.6rem;
     padding-bottom: 10px;
 }
 
 .movie-card{
-    min-width: 250px;  
-    max-width: 500px;
-    height: 350px;
+    min-width: 200px;  
+    height: 280px;
     border-radius: 10px;
 }
 .movie-card1{
-    min-width: 250px;  
-    max-width: 500px;
-    height: 350px;
+   min-width: 450px;
+    height: 280px;
     border-radius: 10px;
 }
 
 .movie-card img{
     width: 100%;
     height: 100%;
-    object-fit:contain;  
+    object-fit:fill;  
     border-radius: 10px;
 }
 .movie-card1 img{

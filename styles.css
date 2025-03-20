@@ -74,32 +74,39 @@ body {
 
 .row-container {
     display: flex;
-    gap: 0.7rem;
+    gap: 0.5rem;
     padding-bottom: 10px;
 }
 
-.movie-card, .movie-card1 {
-    min-width: 250px; /* Makes all cards uniform */
+.movie-card{
+    min-width: 250px;  
     max-width: 500px;
     height: 350px;
-    background: #2f2f2f;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Prevents image overflow */
+    border-radius: 10px;
+}
+.movie-card1{
+    min-width: 250px;  
+    max-width: 500px;
+    height: 350px;
+    border-radius: 10px;
 }
 
-.movie-card img, .movie-card1 img {
+.movie-card img{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the cards properly */
-    border-radius: 8px; /* Matches card border */
+    object-fit:contain;  
+    border-radius: 10px;
 }
-
-.movie-card:hover, .movie-card1:hover {
+.movie-card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;  
+    border-radius: 10px;
+}
+.movie-card:hover{
     transform: scale(1.05);
-    cursor: pointer;
+}
+.movie-card1:hover{
+    transform: scale(1.05);
+     
 }

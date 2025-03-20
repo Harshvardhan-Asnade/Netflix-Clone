@@ -102,9 +102,23 @@ body {
     border-radius: 10px;
 }
 .movie-card:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 .movie-card1:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
      
+}
+.Anime-card{
+    min-width: 340px;
+     height: 200px;
+     border-radius: 10px;
+ }
+ .Anime-card img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;  
+    border-radius: 10px;
+}
+.Anime-card:hover{
+    transform: scale(1.4);
 }

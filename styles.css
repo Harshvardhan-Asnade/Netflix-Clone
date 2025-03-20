@@ -8,7 +8,6 @@ body {
     display: flex;
     align-items: center;
     padding: 30px 40px;
-    position: sticky;
     width: auto;
     top: 0;
 }
@@ -121,4 +120,21 @@ body {
 }
 .Anime-card:hover{
     transform: scale(1.4);
+}
+footer{
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer p a{
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }

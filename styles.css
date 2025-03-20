@@ -78,13 +78,13 @@ body {
 }
 
 .movie-card{
-    min-width: 200px;  
-    height: 280px;
+    min-width: 180px;  
+    height: 250px;
     border-radius: 10px;
 }
 .movie-card1{
    min-width: 450px;
-    height: 280px;
+    height: 250px;
     border-radius: 10px;
 }
 
@@ -97,14 +97,14 @@ body {
 .movie-card1 img{
     width: 100%;
     height: 100%;
-    object-fit:cover;  
+    object-fit:contain;  
     border-radius: 10px;
 }
 .movie-card:hover{
-    transform: scale(1.2);
+    transform: scale(1.18);
 }
 .movie-card1:hover{
-    transform: scale(1.2);
+    transform: scale(1.18);
      
 }
 .Anime-card{
@@ -119,7 +119,7 @@ body {
     border-radius: 10px;
 }
 .Anime-card:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 footer{
     width: 100%;
